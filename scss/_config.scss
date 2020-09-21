@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+$primary-color: #c8a97e;
+$font-color-1: #666666;
+$font-color-2: rgba(0, 0, 0, 0.3);
+$vibes: 'Great Vibes', cursive;
+$poppins: 'Poppins', sans-serif;
+
+%headerAnimation{
+    opacity: 0;
+    transform: translateY(8rem);
+    transition: all 0.7s ease-out;
+}
+
+
+%input{
+    width: 100%;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    background: $primary-color;
+    border: none;
+    margin-bottom: 0.6rem;
+    border-radius: 0.2rem;
+    &::placeholder{
+       font-size: 1.2em;
+       font-family: $poppins;
+       text-align: center;
+       color: #fff; 
+    }
+}
+
+
+%section-header {
+    text-align: center;
+    font-size: 2.9em;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    &::after{
+        position: absolute;
+        content: 'Services';
+        width: 50%;
+        height: 50%;
+        margin-left: 0rem;
+        font-family: $vibes;
+        font-size: 2.1em;
+        font-weight: normal;
+        color: $primary-color;
+        z-index: -1;
+        // margin-top: -5.3rem;
+    }
+}
+
+%beef{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-size: 100% 100%;
+    border-radius: 2.6rem;
+    margin: 0 auto;
+}
+
+@mixin setGrilledBeefImg($grilledImg) {
+    @each $grilled in $grilledImg {
+        .grilled-img-#{$grilled} {
+            background: url('../img/grilledBeef#{$grilled}.jpg') no-repeat center/cover;
+            @extend %beef
+        }
+    }
+}
+
+%specialityImg{
+    width: 50%;
+    height: 13.5rem;
+}
+
+@mixin setSpecialityImg($image) {
+    @each $img in $image {
+        .image-#{$img} {
+                background: url('../img/dinner-#{$img}.jpg') no-repeat center/cover;
+                @extend %specialityImg;
+            }
+        }
+    }
+
+
+%chefImg{
+    height:22rem;
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+ @mixin setChefImg($image) {
+     @each $img in $image {
+         .chef-photo-#{$img}{
+            background: url('../img/chef-#{$img}.jpg') no-repeat top/cover;
+            @extend %chefImg
+         }
+     }
+ }
+
+ %blogImg{
+    width: 100%;
+    height: 18rem;
+}
+
+@mixin setBlogImg($image) {
+    @each $img in $image {
+        .blog-img-#{$img} {
+            background: url('../img/image_#{$img}.jpg') no-repeat center/cover;
+            @extend %blogImg
+        }
+    }
+}
+
+%thumbImg{
+    width: 5rem;
+    height: 6rem;
+    
+}
+
+@mixin setThumbImg($image) {
+    @each $img in $image {
+        .thumb-img-menu-#{$img} {
+            background: url('../img/insta-#{$img}.jpg') no-repeat center/cover;
+            @extend %thumbImg
+        }
+    }
+}
+
+

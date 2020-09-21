@@ -1,0 +1,694 @@
+@import 'config';
+@import 'utils';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fff;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 400;
+    color: $font-color-1;
+    overflow-x: hidden;
+}
+
+.animate{
+    opacity: 1!important;
+    transform: translateY(0rem)!important;
+}
+
+.nav_animate {
+    background: #fff!important;
+    display: sticky!important;
+    top: 0;
+    box-shadow: 2px 2px 2px 2px #eee;
+    z-index: 100;
+    color: #000;
+    position: fixed;
+    width: 100%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+
+}
+
+li {
+    display: inline-block;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0!important;
+    background: url(../img/landing.jpg) no-repeat center/cover;
+    padding-top: 2.7rem;
+}
+
+.header::after  {
+    position: absolute;
+    content: '';
+    background: #00000099;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .header-content{
+    position: relative;
+    z-index: 2;
+}
+
+.header-content .brand {
+    padding-top: 0.5rem;
+    padding-right: 17rem;
+    font-weight: 900;
+}
+
+.header-content .hamburger_div{
+   height: 2rem;
+   width: 2rem;
+   background: #fff;
+   position: absolute;
+   display: none;
+    .ham{
+        height: .2rem;
+        width: 90%;
+        background: #000;
+        margin-bottom: 5px;
+    }
+}
+
+
+.header-content ul {
+    font-size: 0.9em;
+    margin-left: 3rem!important;
+    color: #fff;
+}
+
+
+.header-content li {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.header-content .btn{
+    padding: 0rem 1rem 0rem 1rem;
+    border: 1px solid $primary-color;
+    color: #fff;
+    background: $primary-color;
+    border-radius: 1rem;
+    font-size: 0.8em;
+}
+
+.header-content .btn a{
+    color: #fff;
+}
+
+
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    transform: translateY(0rem);
+    transition: all 0.5s ease-in;
+    &.nav_animate h3, &.nav_animate li{
+        color: #000;
+    }
+    
+}
+
+.header .landing-header {
+    padding-top: 7rem;
+    margin: auto;
+    text-align: center; 
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    @extend %headerAnimation;
+    // color: #fff;
+}
+
+.header .landing-header .great-vibes {
+    font-family: 'Great Vibes', cursive;
+    color: $primary-color;
+    font-weight: 100;
+}
+
+.header .landing-header .descp {
+    margin-top: -3rem ;
+    font-size: 3.9rem!important;
+    color: #fff;
+}
+
+.header .grilled-beef{
+    display: flex;
+    margin: auto;
+    padding-top: 1.2rem;
+    justify-content: space-around;
+    // transform: translateY(10rem);
+    // opacity: 0;
+    transition: all 1s ease-in-out;
+    .grill {
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(10rem);
+        @include setGrilledBeefImg(('1', '2', '3', '4')); //for .grilled-beef-img;
+        .grilled {
+            font-weight: 550;
+            font-size: 1.15em;
+            margin-top: 0.5rem;
+        }
+        .meat-potatoes {
+            margin-top: -0.5rem;
+            font-size: 0.88em;
+            color: #ffffffcc;
+        }
+    }
+}
+
+.About-feliciano {
+    padding-top: 5.5rem;
+    .about-feliciano-grid {
+        display: grid;
+        grid-template-columns: 1.85fr 1.15fr;
+        grid-column-gap: 0.1rem;
+    }
+    
+    .about-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem 0 1rem;
+        .img1 {
+           width: 90%;
+           height: 100%;
+           background: url('../img/about1.jpg') no-repeat center/cover; 
+        }
+        .img2 {
+            width: 90%;
+            height: 100%;
+            margin-left: -1rem;
+            margin-top: 2rem;
+            background: url('../img/about-2.jpg') no-repeat center/cover;
+        }
+    }
+
+    .about-content{
+          padding-top: 5.3rem;
+          opacity: 0;
+          transform: translateY(10rem);
+          transition: all 1s ease ; 
+        .about-content-header{
+            text-align: initial;
+            line-height: 1.2;
+            margin-bottom: 1.85rem;
+            font-family: $poppins;
+            @extend %section-header;
+            &::after{
+                content: 'About';
+                margin-top: -7.5rem;
+                margin-left: -17rem;
+            }
+        }
+        .about-content-body{
+            margin-top: -0.5rem;
+            span{
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+
+        .number-link{
+            display: block;
+            margin: 0rem 0 2rem 0;
+            color: $primary-color;
+            font-weight: 800;
+            font-size: 2.3em;
+            font-family:Arial, Helvetica, sans-serif
+        }
+    }
+}
+
+.about-feliciano-numbers{
+    .numbers-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 7.2rem;
+        width: 100%;
+        .number{
+            color: $primary-color;
+            font-size: 2.4em;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            color: $font-color-1;
+        }
+    }
+}
+
+.services {
+    padding-top: 12rem;
+    .catering {
+        @extend %section-header;
+        @extend %headerAnimation;
+        &::after {
+            margin-top: -5.3rem;
+            margin-left: -35rem;
+        }
+    }
+    .services-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        padding-top: 3.8rem;
+        text-align: center;
+
+        .services-content {
+            .services-icon{
+                // display: block;
+                color: $primary-color;
+                i{
+                    &::before{
+                        margin-left: 0;
+                    }  
+                }
+            }
+            h3 {
+                color: #000;
+                font-size:1.5em;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}
+
+.specialities {
+    padding-top: 12rem;
+    .menu{
+        @extend %section-header;
+        @extend %headerAnimation;
+        &::after {
+            margin-left: -28rem;
+            margin-top: -5.3rem;
+            content: 'Specialities';
+        }
+    }
+    .specialties-gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+        border: 1px solid #dfdfdf;
+        .gallery{
+            display: grid;
+            .specialities-card{
+                display: flex;
+                opacity: 0;
+                transform: translateY(8rem);
+                transition: all 1s ease-in-out;
+                &:nth-child(odd) .lowercard{
+                    order: 1;
+                }
+                @include setSpecialityImg(('1', '2', '3', '4', '5', '6'));
+                .lowercard{
+                    padding: 1.5rem 1.5rem 0 2rem;
+                    width: 50%;
+                    .money-flex{
+                        display: flex;
+                        h3{
+                            line-height: 1.5;
+                            color: #333;
+                        }
+                        span{
+                            color: $primary-color;
+                            display: block;
+                            font-weight: bold;
+                            font-size: 1.1em;
+                        }
+                    }
+                    
+                    p{
+                        margin-top: 0.7rem;
+                        line-height: 1.5rem;
+                        font-size: 0.9em;
+                    }
+                    button{
+                        background: $primary-color;
+                        border: none;
+                        color: #fff;
+                        padding: 0.7rem 0.7rem;
+                        border-radius: 2rem;
+                        margin: 0.8rem 0 1.2rem 0;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+.chef {
+    padding-top: 12rem;
+    .master-chef{
+        @extend %section-header;
+        @extend %headerAnimation;
+        &::after {
+            left: 20rem;
+            margin-top: -5.3rem;
+            content: 'Chef';
+        }
+    }
+    .chef-card-section{
+        padding-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap : 1.77rem;
+        .chef-card {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: translateY(6rem);
+            @include setChefImg(('1', '2', '3', '4'));
+            .chef-details{
+                padding-top: 1.8rem;
+                .chef-name {
+                    color: #000;
+                    font-weight: bold;
+                }
+                .chef-title{
+                    font-size: 0.79em;
+                    color: $font-color-2
+                }
+                .icons {
+                    padding-top: 0.7rem;
+                    .icon-ul{
+                        // transform: translateY(6rem);
+                        li{
+                            // opacity: 0;
+                            transform: translateY(6rem);
+                        }
+                    }
+                    a{
+                        margin-right: 0.5rem;
+                        span{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.booking-section {
+    padding-top: 7rem;
+    .background{
+        width: 100%;
+        height: 105vh;
+        background: url('../img/booking.jpg') no-repeat center/cover;
+    }
+    &::before{
+        background: $primary-color;
+        opacity: 0.5;
+        content: '';
+        width: 100%;
+        height: 105vh;
+        position: absolute;
+    }
+    .form {
+        position: absolute;
+        height: 35.4rem;
+        width: 41rem;
+        background: #fff;
+        margin-top: -40rem;
+        .reserve-header{
+            @extend %section-header;
+            z-index: 3;
+            &::after{
+                margin-top: -5.3rem;
+                margin-left: -35.5rem;
+                z-index: 1;
+                width: 100%;
+                content: 'Book a table';
+            }
+        }
+        .form-content {
+            padding: 1rem 2rem 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            width: 100%;
+            label{
+                display: block;
+                font-weight: bold;
+                color: #000;
+            }
+            input{
+                margin: 1rem 0 1rem 0;
+                display: block;
+                width: 100%;
+                padding: 1rem 1rem 1rem 1rem;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                &::placeholder{
+                    color: #afafaf;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .btn-reserve{
+            color:#fff;
+            background: $primary-color;
+            border: 1px solid $primary-color;
+            margin: 1.5rem 0 0 8rem;
+            padding: 0.7rem 9rem 0.7rem 9rem;
+            font-family: 'poppins', sans-serif;
+            border-radius: 2rem;
+        }
+    }
+}
+
+.happy-customers{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 7rem;
+    .testimony-header {
+        @extend %section-header;
+        @extend %headerAnimation;
+        &::after{
+            content: 'Testimony';
+            left: 21rem;
+        }
+    }
+    .customer-carousel{
+        padding-top: 4rem;
+        display: flex;
+        // justify-content: space-evenly;
+        transition: transform 0.6s ease-in-out;
+        // margin-left: -6rem;
+        
+       .customer{
+            text-align: center;
+            width: 100%;
+            margin-right: 9rem;
+            // margin: 0rem 2rem 0rem 2rem;
+            // margin: 0 1.5rem 0 1.5rem;
+            .customer-img{
+                background: red;
+                height: 8.5rem;
+                width: 8.5rem;
+                border-radius: 50%;
+                margin: 0 4rem 3rem 4rem;
+            }
+            .customer-text{
+                color: $font-color-1;
+                font-weight: normal;
+                // padding: 0 0.84rem 0 0.84rem;
+                margin: 0 0.84rem 0 0.84rem;
+            }
+            .customer-name{
+                font-size: 1.2em;
+            }
+            .customer-type{
+                font-size: 0.8em;
+                color: $font-color-1;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .btn-carousel{
+        margin-top: 4rem;
+        button{
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background: #00000033;
+            border: none;
+            cursor: pointer;
+            margin: 0 0.3rem 0 0.3rem;
+            outline: none;
+        }
+        .active{
+            background: $primary-color;
+        }
+    }
+}
+
+
+.blog-posts{
+    padding-top: 10rem;
+    .blog-header{
+        @extend %section-header;
+        @extend %headerAnimation;
+        &::after{
+            margin-top: -5.1rem;
+            left: 19.8rem;
+            content: 'Blog'
+        }
+    }
+    .blog-post-div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        padding-top: 3.6rem;
+        .blog-card{
+            width: 100%;
+            height: 28rem;
+            @include setBlogImg(('1', '2', '3'));
+            .blog-card-text{
+                margin: 1.7rem 0rem 1.7rem 1.5rem;
+                .sept{
+                    color: $font-color-2;
+                    font-size: 0.89em;
+                }
+                .taste{
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    line-height: 1.5;
+                    margin: 0.2rem 1rem 0 0;
+                }
+                .read{
+                    margin: 1rem 0 1rem 0;
+                    font-size: 0.865em; 
+                    color: #000;
+                    span{
+                        float: right;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+footer {
+    margin-top: 16rem;
+    background: #141313;
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 5rem;
+        grid-column-gap: 1.5rem;
+        font-size: 0.85em;
+        color: rgba(255, 255, 255, 0.7);
+        .footer-header{
+            font-weight: bolder;
+            color: #fff;
+            margin-bottom: 2.5rem;
+            font-size: 1.2em;
+        }
+        .feliciano{
+           .icons{
+               padding-top: 2rem;
+               li {
+                    margin-right: 0.7rem;
+                    transform: translateY(6rem);
+                    opacity: 0;
+                    a{
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        background: #FFFFFF0D;
+                        text-align: center;
+                        display: block;
+                        border-radius: 50%; 
+                        span{
+                            color: #fff;
+                            font-size: 1.25rem;
+                        }
+                    }
+               }
+           } 
+        }
+        .open-hours{
+            .date{
+               display: flex;
+               justify-content: space-between;
+               padding-right: 3rem; 
+            }
+        }
+        .instagram{
+            .thumb-images{
+                .flex-thumb{
+                    display: flex;
+                    @include setThumbImg(('1', '2', '3', '4', '5', '6'));
+                }
+                
+            }
+        }
+        .newsletter {
+            .input-1{
+                @extend %input;
+                margin-top: 1rem;
+                background: rgba(255, 255, 255, 0.1) ;
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+            .input-2{
+                @extend %input;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.85em;
+        padding: 5rem 0 6rem 0;
+    }
+}
+
+@import 'mobile';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1202 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+.header .landing-header, .services .catering, .specialities .menu, .chef .master-chef, .happy-customers .testimony-header, .blog-posts .blog-header {
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: all 0.7s ease-out;
+}
+
+footer .footer-content .newsletter .input-1, footer .footer-content .newsletter .input-2 {
+  width: 100%;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  background: #c8a97e;
+  border: none;
+  margin-bottom: 0.6rem;
+  border-radius: 0.2rem;
+}
+
+footer .footer-content .newsletter .input-1::placeholder, footer .footer-content .newsletter .input-2::placeholder {
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.About-feliciano .about-content .about-content-header, .services .catering, .specialities .menu, .chef .master-chef, .booking-section .form .reserve-header, .happy-customers .testimony-header, .blog-posts .blog-header {
+  text-align: center;
+  font-size: 2.9em;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+.About-feliciano .about-content .about-content-header::after, .services .catering::after, .specialities .menu::after, .chef .master-chef::after, .booking-section .form .reserve-header::after, .happy-customers .testimony-header::after, .blog-posts .blog-header::after {
+  position: absolute;
+  content: 'Services';
+  width: 50%;
+  height: 50%;
+  margin-left: 0rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.1em;
+  font-weight: normal;
+  color: #c8a97e;
+  z-index: -1;
+}
+
+.header .grilled-beef .grill .grilled-img-1, .header .grilled-beef .grill .grilled-img-2, .header .grilled-beef .grill .grilled-img-3, .header .grilled-beef .grill .grilled-img-4 {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-size: 100% 100%;
+  border-radius: 2.6rem;
+  margin: 0 auto;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-1, .specialities .specialties-gallery .gallery .specialities-card .image-2, .specialities .specialties-gallery .gallery .specialities-card .image-3, .specialities .specialties-gallery .gallery .specialities-card .image-4, .specialities .specialties-gallery .gallery .specialities-card .image-5, .specialities .specialties-gallery .gallery .specialities-card .image-6 {
+  width: 50%;
+  height: 13.5rem;
+}
+
+.chef .chef-card-section .chef-card .chef-photo-1, .chef .chef-card-section .chef-card .chef-photo-2, .chef .chef-card-section .chef-card .chef-photo-3, .chef .chef-card-section .chef-card .chef-photo-4 {
+  height: 22rem;
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-img-1, .blog-posts .blog-post-div .blog-card .blog-img-2, .blog-posts .blog-post-div .blog-card .blog-img-3 {
+  width: 100%;
+  height: 18rem;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-1, footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-2, footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-3, footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-4, footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-5, footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-6 {
+  width: 5rem;
+  height: 6rem;
+}
+
+.container {
+  padding: 0rem 4rem 0 4rem;
+  overflow: hidden;
+}
+
+.carousel-container {
+  padding: 0 6rem 0 6rem;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+  color: #666666;
+  overflow-x: hidden;
+}
+
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0rem) !important;
+}
+
+.nav_animate {
+  background: #fff !important;
+  display: sticky !important;
+  top: 0;
+  box-shadow: 2px 2px 2px 2px #eee;
+  z-index: 100;
+  color: #000;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0 !important;
+  background: url(../img/landing.jpg) no-repeat center/cover;
+  padding-top: 2.7rem;
+}
+
+.header::after {
+  position: absolute;
+  content: '';
+  background: #00000099;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-content .brand {
+  padding-top: 0.5rem;
+  padding-right: 17rem;
+  font-weight: 900;
+}
+
+.header-content .hamburger_div {
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  position: absolute;
+  display: none;
+}
+
+.header-content .hamburger_div .ham {
+  height: .2rem;
+  width: 90%;
+  background: #000;
+  margin-bottom: 5px;
+}
+
+.header-content ul {
+  font-size: 0.9em;
+  margin-left: 3rem !important;
+  color: #fff;
+}
+
+.header-content li {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.header-content .btn {
+  padding: 0rem 1rem 0rem 1rem;
+  border: 1px solid #c8a97e;
+  color: #fff;
+  background: #c8a97e;
+  border-radius: 1rem;
+  font-size: 0.8em;
+}
+
+.header-content .btn a {
+  color: #fff;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  transform: translateY(0rem);
+  transition: all 0.5s ease-in;
+}
+
+.header nav.nav_animate h3, .header nav.nav_animate li {
+  color: #000;
+}
+
+.header .landing-header {
+  padding-top: 7rem;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.header .landing-header .great-vibes {
+  font-family: 'Great Vibes', cursive;
+  color: #c8a97e;
+  font-weight: 100;
+}
+
+.header .landing-header .descp {
+  margin-top: -3rem;
+  font-size: 3.9rem !important;
+  color: #fff;
+}
+
+.header .grilled-beef {
+  display: flex;
+  margin: auto;
+  padding-top: 1.2rem;
+  justify-content: space-around;
+  transition: all 1s ease-in-out;
+}
+
+.header .grilled-beef .grill {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.header .grilled-beef .grill .grilled-img-1 {
+  background: url("../img/grilledBeef1.jpg") no-repeat center/cover;
+}
+
+.header .grilled-beef .grill .grilled-img-2 {
+  background: url("../img/grilledBeef2.jpg") no-repeat center/cover;
+}
+
+.header .grilled-beef .grill .grilled-img-3 {
+  background: url("../img/grilledBeef3.jpg") no-repeat center/cover;
+}
+
+.header .grilled-beef .grill .grilled-img-4 {
+  background: url("../img/grilledBeef4.jpg") no-repeat center/cover;
+}
+
+.header .grilled-beef .grill .grilled {
+  font-weight: 550;
+  font-size: 1.15em;
+  margin-top: 0.5rem;
+}
+
+.header .grilled-beef .grill .meat-potatoes {
+  margin-top: -0.5rem;
+  font-size: 0.88em;
+  color: #ffffffcc;
+}
+
+.About-feliciano {
+  padding-top: 5.5rem;
+}
+
+.About-feliciano .about-feliciano-grid {
+  display: grid;
+  grid-template-columns: 1.85fr 1.15fr;
+  grid-column-gap: 0.1rem;
+}
+
+.About-feliciano .about-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1rem 0 1rem;
+}
+
+.About-feliciano .about-images .img1 {
+  width: 90%;
+  height: 100%;
+  background: url("../img/about1.jpg") no-repeat center/cover;
+}
+
+.About-feliciano .about-images .img2 {
+  width: 90%;
+  height: 100%;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  background: url("../img/about-2.jpg") no-repeat center/cover;
+}
+
+.About-feliciano .about-content {
+  padding-top: 5.3rem;
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: all 1s ease;
+}
+
+.About-feliciano .about-content .about-content-header {
+  text-align: initial;
+  line-height: 1.2;
+  margin-bottom: 1.85rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.About-feliciano .about-content .about-content-header::after {
+  content: 'About';
+  margin-top: -7.5rem;
+  margin-left: -17rem;
+}
+
+.About-feliciano .about-content .about-content-body {
+  margin-top: -0.5rem;
+}
+
+.About-feliciano .about-content .about-content-body span {
+  display: block;
+  margin-top: 1rem;
+}
+
+.About-feliciano .about-content .number-link {
+  display: block;
+  margin: 0rem 0 2rem 0;
+  color: #c8a97e;
+  font-weight: 800;
+  font-size: 2.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-feliciano-numbers .numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 7.2rem;
+  width: 100%;
+}
+
+.about-feliciano-numbers .numbers-grid .number {
+  color: #c8a97e;
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about-feliciano-numbers .numbers-grid .text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.services {
+  padding-top: 12rem;
+}
+
+.services .catering::after {
+  margin-top: -5.3rem;
+  margin-left: -35rem;
+}
+
+.services .services-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  padding-top: 3.8rem;
+  text-align: center;
+}
+
+.services .services-body .services-content .services-icon {
+  color: #c8a97e;
+}
+
+.services .services-body .services-content .services-icon i::before {
+  margin-left: 0;
+}
+
+.services .services-body .services-content h3 {
+  color: #000;
+  font-size: 1.5em;
+  letter-spacing: 1.2px;
+}
+
+.specialities {
+  padding-top: 12rem;
+}
+
+.specialities .menu::after {
+  margin-left: -28rem;
+  margin-top: -5.3rem;
+  content: 'Specialities';
+}
+
+.specialities .specialties-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4rem;
+  border: 1px solid #dfdfdf;
+}
+
+.specialities .specialties-gallery .gallery {
+  display: grid;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card {
+  display: flex;
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: all 1s ease-in-out;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card:nth-child(odd) .lowercard {
+  order: 1;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-1 {
+  background: url("../img/dinner-1.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-2 {
+  background: url("../img/dinner-2.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-3 {
+  background: url("../img/dinner-3.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-4 {
+  background: url("../img/dinner-4.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-5 {
+  background: url("../img/dinner-5.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .image-6 {
+  background: url("../img/dinner-6.jpg") no-repeat center/cover;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard {
+  padding: 1.5rem 1.5rem 0 2rem;
+  width: 50%;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard .money-flex {
+  display: flex;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard .money-flex h3 {
+  line-height: 1.5;
+  color: #333;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard .money-flex span {
+  color: #c8a97e;
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard p {
+  margin-top: 0.7rem;
+  line-height: 1.5rem;
+  font-size: 0.9em;
+}
+
+.specialities .specialties-gallery .gallery .specialities-card .lowercard button {
+  background: #c8a97e;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 0.7rem;
+  border-radius: 2rem;
+  margin: 0.8rem 0 1.2rem 0;
+}
+
+.chef {
+  padding-top: 12rem;
+}
+
+.chef .master-chef::after {
+  left: 20rem;
+  margin-top: -5.3rem;
+  content: 'Chef';
+}
+
+.chef .chef-card-section {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.77rem;
+}
+
+.chef .chef-card-section .chef-card {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(6rem);
+}
+
+.chef .chef-card-section .chef-card .chef-photo-1 {
+  background: url("../img/chef-1.jpg") no-repeat top/cover;
+}
+
+.chef .chef-card-section .chef-card .chef-photo-2 {
+  background: url("../img/chef-2.jpg") no-repeat top/cover;
+}
+
+.chef .chef-card-section .chef-card .chef-photo-3 {
+  background: url("../img/chef-3.jpg") no-repeat top/cover;
+}
+
+.chef .chef-card-section .chef-card .chef-photo-4 {
+  background: url("../img/chef-4.jpg") no-repeat top/cover;
+}
+
+.chef .chef-card-section .chef-card .chef-details {
+  padding-top: 1.8rem;
+}
+
+.chef .chef-card-section .chef-card .chef-details .chef-name {
+  color: #000;
+  font-weight: bold;
+}
+
+.chef .chef-card-section .chef-card .chef-details .chef-title {
+  font-size: 0.79em;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.chef .chef-card-section .chef-card .chef-details .icons {
+  padding-top: 0.7rem;
+}
+
+.chef .chef-card-section .chef-card .chef-details .icons .icon-ul li {
+  transform: translateY(6rem);
+}
+
+.chef .chef-card-section .chef-card .chef-details .icons a {
+  margin-right: 0.5rem;
+}
+
+.chef .chef-card-section .chef-card .chef-details .icons a span {
+  color: #c8a97e;
+}
+
+.booking-section {
+  padding-top: 7rem;
+}
+
+.booking-section .background {
+  width: 100%;
+  height: 105vh;
+  background: url("../img/booking.jpg") no-repeat center/cover;
+}
+
+.booking-section::before {
+  background: #c8a97e;
+  opacity: 0.5;
+  content: '';
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+}
+
+.booking-section .form {
+  position: absolute;
+  height: 35.4rem;
+  width: 41rem;
+  background: #fff;
+  margin-top: -40rem;
+}
+
+.booking-section .form .reserve-header {
+  z-index: 3;
+}
+
+.booking-section .form .reserve-header::after {
+  margin-top: -5.3rem;
+  margin-left: -35.5rem;
+  z-index: 1;
+  width: 100%;
+  content: 'Book a table';
+}
+
+.booking-section .form .form-content {
+  padding: 1rem 2rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1.5rem;
+  width: 100%;
+}
+
+.booking-section .form .form-content label {
+  display: block;
+  font-weight: bold;
+  color: #000;
+}
+
+.booking-section .form .form-content input {
+  margin: 1rem 0 1rem 0;
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.booking-section .form .form-content input::placeholder {
+  color: #afafaf;
+  font-size: 0.9em;
+}
+
+.booking-section .form .btn-reserve {
+  color: #fff;
+  background: #c8a97e;
+  border: 1px solid #c8a97e;
+  margin: 1.5rem 0 0 8rem;
+  padding: 0.7rem 9rem 0.7rem 9rem;
+  font-family: 'poppins', sans-serif;
+  border-radius: 2rem;
+}
+
+.happy-customers {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 7rem;
+}
+
+.happy-customers .testimony-header::after {
+  content: 'Testimony';
+  left: 21rem;
+}
+
+.happy-customers .customer-carousel {
+  padding-top: 4rem;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.happy-customers .customer-carousel .customer {
+  text-align: center;
+  width: 100%;
+  margin-right: 9rem;
+}
+
+.happy-customers .customer-carousel .customer .customer-img {
+  background: red;
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 50%;
+  margin: 0 4rem 3rem 4rem;
+}
+
+.happy-customers .customer-carousel .customer .customer-text {
+  color: #666666;
+  font-weight: normal;
+  margin: 0 0.84rem 0 0.84rem;
+}
+
+.happy-customers .customer-carousel .customer .customer-name {
+  font-size: 1.2em;
+}
+
+.happy-customers .customer-carousel .customer .customer-type {
+  font-size: 0.8em;
+  color: #666666;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.happy-customers .btn-carousel {
+  margin-top: 4rem;
+}
+
+.happy-customers .btn-carousel button {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #00000033;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.3rem 0 0.3rem;
+  outline: none;
+}
+
+.happy-customers .btn-carousel .active {
+  background: #c8a97e;
+}
+
+.blog-posts {
+  padding-top: 10rem;
+}
+
+.blog-posts .blog-header::after {
+  margin-top: -5.1rem;
+  left: 19.8rem;
+  content: 'Blog';
+}
+
+.blog-posts .blog-post-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  padding-top: 3.6rem;
+}
+
+.blog-posts .blog-post-div .blog-card {
+  width: 100%;
+  height: 28rem;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-img-1 {
+  background: url("../img/image_1.jpg") no-repeat center/cover;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-img-2 {
+  background: url("../img/image_2.jpg") no-repeat center/cover;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-img-3 {
+  background: url("../img/image_3.jpg") no-repeat center/cover;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-card-text {
+  margin: 1.7rem 0rem 1.7rem 1.5rem;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-card-text .sept {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.89em;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-card-text .taste {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0.2rem 1rem 0 0;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-card-text .read {
+  margin: 1rem 0 1rem 0;
+  font-size: 0.865em;
+  color: #000;
+}
+
+.blog-posts .blog-post-div .blog-card .blog-card-text .read span {
+  float: right;
+}
+
+footer {
+  margin-top: 16rem;
+  background: #141313;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 5rem;
+  grid-column-gap: 1.5rem;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-content .footer-header {
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  font-size: 1.2em;
+}
+
+footer .footer-content .feliciano .icons {
+  padding-top: 2rem;
+}
+
+footer .footer-content .feliciano .icons li {
+  margin-right: 0.7rem;
+  transform: translateY(6rem);
+  opacity: 0;
+}
+
+footer .footer-content .feliciano .icons li a {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #FFFFFF0D;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+}
+
+footer .footer-content .feliciano .icons li a span {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+footer .footer-content .open-hours .date {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb {
+  display: flex;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-1 {
+  background: url("../img/insta-1.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-2 {
+  background: url("../img/insta-2.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-3 {
+  background: url("../img/insta-3.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-4 {
+  background: url("../img/insta-4.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-5 {
+  background: url("../img/insta-5.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .instagram .thumb-images .flex-thumb .thumb-img-menu-6 {
+  background: url("../img/insta-6.jpg") no-repeat center/cover;
+}
+
+footer .footer-content .newsletter .input-1 {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+footer .footer-content .newsletter .input-1::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85em;
+  padding: 5rem 0 6rem 0;
+}
+
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .container {
+    padding: 0rem 0.9rem 0 0.9rem;
+    margin: 0;
+  }
+  li {
+    display: block;
+  }
+  header::after {
+    height: 100vh;
+  }
+  .header-content nav {
+    padding: 1rem 0 0 0rem;
+    margin-left: -5.7rem;
+  }
+  .header-content .brand {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0.75rem 9.6rem 0 0;
+  }
+  .header-content .hamburger_div {
+    height: 2rem;
+    width: 1.5rem;
+    background: none;
+    position: absolute;
+    display: block;
+    right: 1.5rem;
+    top: 2.7rem;
+  }
+  .header-content .hamburger_div .ham {
+    height: .1rem;
+    width: 90%;
+    background: #fff;
+    margin-bottom: 5px;
+  }
+  .header-content ul {
+    position: absolute;
+    display: block;
+    background: #000;
+    width: 50%;
+    text-align: center;
+    transform: translateY(-24rem);
+  }
+  header .landing-header {
+    padding-top: 13rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  header .landing-header .descp {
+    margin-top: -3rem;
+    font-size: 1.9rem !important;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  header .grilled-beef {
+    display: flex;
+    margin: auto;
+    margin-top: 23rem;
+    padding-top: 0rem;
+    flex-direction: column;
+  }
+  header .grilled-beef .grill {
+    color: #000;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  header .grilled-beef .grill .grilled {
+    font-weight: 550;
+    font-size: 1.15em;
+    margin-top: 0.3rem;
+  }
+  header .grilled-beef .grill .meat-potatoes {
+    margin-top: -0.5rem;
+    font-size: 0.88em;
+    color: #666;
+  }
+  .About-feliciano {
+    margin-top: 60rem;
+  }
+  .About-feliciano .about-feliciano-grid {
+    display: block;
+    width: 106.8%;
+  }
+  .About-feliciano .about-feliciano-grid .about-images {
+    padding: 0;
+  }
+  .About-feliciano .about-feliciano-grid .about-images .img1, .About-feliciano .about-feliciano-grid .about-images .img2 {
+    width: 96%;
+    height: 40rem;
+    margin-top: 0;
+  }
+  .About-feliciano .about-content {
+    padding-top: 9rem;
+  }
+  .About-feliciano .about-content .about-content-header {
+    font-size: 2.3em;
+  }
+  .About-feliciano .about-content .about-content-header::after {
+    margin-top: -6rem;
+    margin-left: -13.4rem;
+    font-size: 2.1em;
+  }
+  .About-feliciano .about-content .about-content-body {
+    margin-top: 3rem;
+    font-size: 0.9em;
+    margin-right: 1rem;
+  }
+  .About-feliciano .about-content .number-link {
+    font-size: 1.75em;
+  }
+  .about-feliciano-numbers .numbers-grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.2rem;
+    width: 100%;
+    align-items: center;
+  }
+  .about-feliciano-numbers .numbers-grid .about-number {
+    margin-bottom: 1.3rem;
+  }
+  .about-feliciano-numbers .numbers-grid .about-number .number {
+    text-align: center;
+  }
+  .services {
+    padding-top: 11rem;
+  }
+  .services .catering {
+    font-size: 2.3em;
+    line-height: 1.2;
+    color: #333;
+  }
+  .services .catering::after {
+    margin-top: -5.8rem;
+    margin-left: -13rem;
+  }
+  .services .services-body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .services .services-body .services-content {
+    margin-bottom: 1.7rem;
+  }
+  .services .services-body .services-content span {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .services .services-body .services-content h3 {
+    color: #000;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+  }
+  .specialities .menu {
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+  }
+  .specialities .menu::after {
+    margin-top: -4.5rem;
+    margin-left: -16rem;
+  }
+  .specialities .specialties-gallery {
+    display: block;
+  }
+  .specialities .specialties-gallery .gallery {
+    display: block;
+  }
+  .specialities .specialties-gallery .gallery .specialities-card {
+    display: block !important;
+  }
+  .specialities .specialties-gallery .gallery .specialities-card .image-1, .specialities .specialties-gallery .gallery .specialities-card .image-2, .specialities .specialties-gallery .gallery .specialities-card .image-3, .specialities .specialties-gallery .gallery .specialities-card .image-4, .specialities .specialties-gallery .gallery .specialities-card .image-5, .specialities .specialties-gallery .gallery .specialities-card .image-6 {
+    width: 100%;
+    height: 14.5rem;
+  }
+  .specialities .specialties-gallery .gallery .specialities-card .lowercard {
+    width: 100%;
+    height: 12rem;
+  }
+  .specialities .specialties-gallery .gallery .specialities-card .lowercard p {
+    margin-top: 0.7rem;
+    line-height: 1.5rem;
+    font-size: 0.9em;
+  }
+  .specialities .specialties-gallery .gallery .specialities-card .lowercard button {
+    background: #c8a97e;
+    border: none;
+    color: #fff;
+    padding: .7rem 2.5rem .7rem 2rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0 1.6rem 0;
+    font-size: 0.9em;
+  }
+  .chef {
+    padding-top: 12rem;
+  }
+  .chef .master-chef {
+    font-size: 2.4em !important;
+    line-height: 1.2;
+    word-spacing: -0.5rem;
+  }
+  .chef .master-chef::after {
+    margin-left: -15rem;
+    margin-top: -6rem;
+    content: 'Chef';
+  }
+  .chef .chef-card-section {
+    display: block;
+  }
+  .chef .chef-card-section .chef-card {
+    margin-bottom: 1.2rem;
+  }
+  .chef .chef-card-section .chef-card .chef-details {
+    padding-top: 1.8rem;
+  }
+  .chef .chef-card-section .chef-card .chef-details .chef-name {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .chef .chef-card-section .chef-card .chef-details .chef-title {
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: -0.3rem;
+  }
+  .chef .chef-card-section .chef-card .chef-details .icons {
+    padding-top: 0.3rem;
+  }
+  .chef .chef-card-section .chef-card .chef-details .icons ul {
+    display: flex;
+  }
+  .chef .chef-card-section .chef-card .chef-details .icons ul li {
+    margin-right: 1rem;
+  }
+  .booking-section {
+    padding-top: 7rem;
+  }
+  .booking-section .background {
+    width: 100vw;
+    height: 160vh;
+  }
+  .booking-section::before {
+    background: #c8a97e;
+    opacity: 0.5;
+    content: '';
+    width: 100vw;
+    height: 160vh;
+    position: absolute;
+  }
+  .booking-section .form {
+    height: 60rem;
+    width: 100%;
+    margin-left: -0.9rem;
+    margin-top: -67rem;
+  }
+  .booking-section .form .reserve-header {
+    font-size: 2.2em;
+    line-height: 1;
+    z-index: 2;
+    margin-top: 2rem;
+  }
+  .booking-section .form .reserve-header::after {
+    margin-top: -5rem;
+    margin-left: -19rem;
+    z-index: 1;
+  }
+  .booking-section .form .form-content {
+    display: block;
+    margin-top: 2rem;
+  }
+  .booking-section .form .btn-reserve {
+    color: #fff;
+    background: #c8a97e;
+    border: 1px solid #c8a97e;
+    margin: 1.5rem 0 0 1.8rem;
+    width: 83%;
+    padding: 0.7rem 0 0.7rem 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 0.8em;
+    border-radius: 2rem;
+  }
+  .happy-customers {
+    margin-top: 3rem;
+  }
+  .blog-posts {
+    padding-top: 10rem;
+  }
+  .blog-posts .blog-header {
+    font-size: 2.2em;
+  }
+  .blog-posts .blog-header::after {
+    margin-top: -4.4rem;
+    margin-left: -14.5rem;
+    content: 'Blog';
+  }
+  .blog-post-div {
+    display: block !important;
+  }
+  .blog-post-div .blog-card {
+    height: 33rem !important;
+  }
+  .blog-post-div .blog-card .sept {
+    margin-top: -0.7rem;
+  }
+  footer {
+    margin-top: 8rem;
+    background: #141313;
+  }
+  footer .footer-content {
+    display: block;
+  }
+  footer .footer-content .feliciano {
+    margin-bottom: 1.6rem;
+  }
+  footer .footer-content .feliciano .icons {
+    padding-top: 1rem;
+  }
+  footer .footer-content .feliciano .icons li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  footer .footer-content .feliciano .icons li a {
+    color: #fff;
+  }
+  footer .footer-content .open-hours {
+    margin-bottom: 1.6rem;
+  }
+  footer .footer-content .open-hours .date {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4.7rem;
+  }
+  footer .footer-content .instagram {
+    margin-bottom: 1.6rem;
+  }
+  footer .footer-content .instagram .thumb-images .flex-thumb {
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
